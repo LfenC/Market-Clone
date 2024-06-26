@@ -1,0 +1,16 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+input.content-new,
+select {
+  @apply border-[1px] border-gray-300 lg:w-[70vh] sm:w-[40vh] text-blue-800 font-extrabold p-2 mb-2;
+}
+
+label {
+  @apply sm:text-start text-lg font-extrabold mb-2 mt-2 uppercase flex flex-col;
+}
+
+input[type="file"] {
+  @apply !hidden;
+}
