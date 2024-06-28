@@ -1,8 +1,4 @@
-interface ButtonHeaderProps {
-  text: string;
-  className: string;
-  handleClick?: () => void;
-}
+import { ButtonHeaderProps } from "@/types/buttonHeaderProps";
 
 export default function ButtonHeader({text, className, handleClick} : ButtonHeaderProps) {
   return (
