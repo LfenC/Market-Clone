@@ -1,10 +1,4 @@
-export interface GenericInputProps {
-  label: string;
-  placeholder: string;
-  name: string;
-  type?: string;
-  id: string;
-}
+import { GenericInputProps } from "@/types/genericInputProps";
 
 export default function GenericInput({
   label,
