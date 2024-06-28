@@ -1,9 +1,10 @@
 import { UploadResponse } from "imagekit/dist/libs/interfaces";
 import  Link  from "next/link"
+import MyImageKit from "./MyImageKit"
 
-export default function UploaderUrlImage({file} : {file: UploadResponse}) {
+export function UploaderUrlImage({file} : {file: UploadResponse}) {
 
-    if(file.fileType === "image") {
+    if(file?.fileType === "image") {
         return (
             <Link target="_blank" href={file?.url} className="cursor-pointer">
                 <img
@@ -12,6 +13,20 @@ export default function UploaderUrlImage({file} : {file: UploadResponse}) {
                     className="rounded-[10px]  hover:transition-all hover:scale-100"
                 />
             </Link>
+        )
+    }
+
+    return (
+        <div>{file?.url}</div>
+    )
+}
+
+export function UploaderUrlImageKit({file} : {file: UploadResponse}) {
+    if(file?.fileType === "image") {
+        return (
+            <div>
+                <MyImageKit src={file.filePath} width={200} height={400}/>
+            </div>
         )
     }
 
