@@ -1,0 +1,35 @@
+.containerUpload {
+  @apply grow pt-8;
+}
+
+.containerImg {
+  @apply bg-gray-200 w-[80%] p-7 mx-auto rounded-[15px] sm:translate-y-2;
+}
+
+h2.titleAddImg {
+  @apply text-blue-700 text-xl font-bold text-center;
+}
+
+.containerFlexImg {
+  @apply flex flex-col justify-center items-center;
+}
+
+.containerFiles {
+  @apply grid grid-cols-3 gap-4;
+}
+
+div.containerResponseImg {
+  @apply size-28 mx-auto translate-y-7;
+}
+
+label.addFiles {
+  @apply text-lg text-center py-2 px-7 rounded-[15px] cursor-pointer;
+}
+
+label.isLoadingImage {
+  @apply bg-blue-700 text-white;
+}
+
+label.isLoadingImagePending {
+  @apply bg-red-200 text-black cursor-not-allowed;
+}

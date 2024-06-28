@@ -1,0 +1,43 @@
+header.headerMarket {
+  @apply border-b-2 p-4 flex sm:flex-col sm:gap-y-4 sm:-translate-x-4 md:-translate-x-0 md:flex-row justify-between items-center;
+}
+
+a.titleMarket {
+  @apply text-2xl font-extrabold text-blue-700;
+}
+
+div.containerButtons {
+  @apply flex gap-x-3;
+}
+
+div.containerImg {
+  @apply flex justify-center items-center ml-3 gap-x-3;
+}
+
+span.nameUser {
+  @apply text-lg font-bold;
+}
+
+div.containerButtonsSession {
+  @apply flex md:flex-row sm:flex-col gap-y-4;
+}
+
+div.buttonsSession {
+  @apply flex md:gap-x-3 sm:gap-x-10;
+}
+
+button.borderNewPost {
+  @apply border-blue-700;
+}
+
+button.borderLogin {
+  @apply border-blue-400;
+}
+
+button.borderLogout {
+  @apply border-red-500;
+}
+
+img.photoUser {
+  @apply rounded-[10%];
+}
