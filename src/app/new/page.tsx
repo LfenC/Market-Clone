@@ -26,7 +26,7 @@ export default function NewPostPage() {
                 <GenericInput label="Title" placeholder="Enter the title of your product" id="title" name="title" />
                 <GenericInput label="Price" placeholder="Enter the price" id="price" name="price" />
                 <div>
-                    <label className="">Category</label>
+                    <label className="">Cat</label>
                     <select name="category" id="category">
                         <option value="0">Ingresa una opcion</option>
                         <option id="cars">Cars</option>
